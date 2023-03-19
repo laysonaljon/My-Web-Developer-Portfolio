@@ -40,18 +40,18 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        As a web developer specializing in React, React Native, and AI, 
+        I have a unique set of skills that allow me to create dynamic, user-friendly, 
+        and innovative applications. My expertise in React and React Native enables me 
+        to create responsive and scalable web and mobile applications that run seamlessly 
+        across multiple platforms. 
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

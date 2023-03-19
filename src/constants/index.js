@@ -13,16 +13,14 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    c9,
+    dct,
+    freelance,
+    cresi,
   } from "../assets";
   
   export const navLinks = [
@@ -54,7 +52,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Educator",
       icon: creator,
     },
   ];
@@ -104,23 +102,15 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Wordpress Developer",
+      company_name: "Cloud9 Media Inc.",
+      icon: c9,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "July 2019 - October 2019",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,24 +119,25 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Instructor",
+      company_name: "Dominican College of Tarlac Inc.",
+      icon: dct,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Nov 2019 - Dec 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Subjects Handled:",
+        "Game Development",
+        "Information Assurance and Security",
+        "Fundamentals of Programming",
+        "Intermidiate Programming",
       ],
     },
     {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      company_name: "CRESI",
+      icon: cresi,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Dec 2020 - July 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,9 +146,9 @@ import {
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Freelance Web Developer",
+      company_name: "Online",
+      icon: freelance,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
@@ -172,35 +163,35 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Jane Doe",
+      designation: "CEO",
+      company: "ABC Incorporated",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "John Doe",
       designation: "COO",
-      company: "DEF Corp",
+      company: "DEF Industries",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Jane Smith",
       designation: "CTO",
-      company: "456 Enterprises",
+      company: "GHI Enterprises",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "AI Image Generator",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "This website is a simple AI Image Generator website created using OpenAI DallE API It allows the user to generate images and share them with the community.",
       tags: [
         {
           name: "react",
@@ -216,12 +207,13 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://https://github.com/laysonaljon/AI-Image-Generator.com/",
+      project_code_link: "https://ai-image-generator-kappa.vercel.app/",
     },
     {
-      name: "Job IT",
+      name: "Codex Chat AI",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This website is a simple AI Coding Chat bot made using VanillaJS and OpenAI's text-davinci-003 model.",
       tags: [
         {
           name: "react",
@@ -237,7 +229,8 @@ import {
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://https://github.com/laysonaljon/Codex-Chat-AI.com/",
+      project_code_link: "https://codex-chat-ai-nine.vercel.app/",
     },
     {
       name: "Trip Guide",
@@ -259,6 +252,7 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+      project_code_link: "https://ai-image-generator-kappa.vercel.app/",
     },
   ];
   
