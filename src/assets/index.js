@@ -24,8 +24,8 @@ import c9 from "./company/c9.png";
 import freelance from "./company/freelance.png";
 import cresi from "./company/cresi.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import imageai from "./imageai.png";
+import chatai from "./chatai.avif";
 import tripguide from "./tripguide.png";
 
 export {
@@ -48,8 +48,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
+  imageai,
+  chatai,
   tripguide,
   c9,
   dct,

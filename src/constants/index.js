@@ -13,8 +13,8 @@ import {
     nodejs,
     mongodb,
     git,
-    carrent,
-    jobit,
+    imageai,
+    chatai,
     tripguide,
     threejs,
     c9,
@@ -26,15 +26,15 @@ import {
   export const navLinks = [
     {
       id: "about",
-      title: "About Us",
+      title: "About",
     },
     {
       id: "work",
-      title: "Our Works",
+      title: "Works",
     },
     {
       id: "contact",
-      title: "Contact Us",
+      title: "Contact",
     },
   ];
   
@@ -205,8 +205,13 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "openAI",
+          color: "white",
+        },
+        
       ],
-      image: carrent,
+      image: imageai,
       source_code_link: "https://https://github.com/laysonaljon/AI-Image-Generator.com/",
       project_code_link: "https://ai-image-generator-kappa.vercel.app/",
     },
@@ -227,8 +232,12 @@ import {
           name: "scss",
           color: "pink-text-gradient",
         },
+        {
+          name: "openAI",
+          color: "white",
+        },
       ],
-      image: jobit,
+      image: chatai,
       source_code_link: "https://https://github.com/laysonaljon/Codex-Chat-AI.com/",
       project_code_link: "https://codex-chat-ai-nine.vercel.app/",
     },
