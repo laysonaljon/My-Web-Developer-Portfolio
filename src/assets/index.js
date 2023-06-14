@@ -26,7 +26,7 @@ import cresi from "./company/cresi.png";
 
 import imageai from "./imageai.png";
 import chatai from "./chatai.avif";
-import tripguide from "./tripguide.png";
+import promptopia from "./promptopia.jpg";
 
 export {
   logo,
@@ -50,7 +50,7 @@ export {
   threejs,
   imageai,
   chatai,
-  tripguide,
+  promptopia,
   c9,
   dct,
   freelance,

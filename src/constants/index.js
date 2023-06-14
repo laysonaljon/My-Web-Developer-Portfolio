@@ -15,7 +15,7 @@ import {
     git,
     imageai,
     chatai,
-    tripguide,
+    promptopia,
     threejs,
     c9,
     dct,
@@ -218,7 +218,7 @@ import {
     {
       name: "Codex Chat AI",
       description:
-        "This website is a simple AI Coding Chat bot made using VanillaJS and OpenAI's text-davinci-003 model.",
+        "This website is a simple AI Coding Chat bot for programming related prompts developed using VanillaJS and OpenAI's API text-davinci-003 model.",
       tags: [
         {
           name: "react",
@@ -229,7 +229,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "vanilla",
           color: "pink-text-gradient",
         },
         {
@@ -242,26 +242,30 @@ import {
       project_code_link: "https://codex-chat-ai-nine.vercel.app/",
     },
     {
-      name: "Trip Guide",
+      name: "Promptopia",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Promptopia is a prompt sharing platform where users can share their favorite prompts for different topics for other users to see and use.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "GoogleAuth",
+          color: "white",
+        },
+        {
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-      project_code_link: "https://ai-image-generator-kappa.vercel.app/",
+      image: promptopia,
+      source_code_link: "https://github.com/laysonaljon/promptopia",
+      project_code_link: "https://promptopia-laysonaljon.vercel.app/",
     },
   ];
   
