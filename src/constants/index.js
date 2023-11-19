@@ -21,6 +21,7 @@ import {
     dct,
     freelance,
     cresi,
+    arizto,
   } from "../assets";
   
   export const navLinks = [
@@ -153,8 +154,8 @@ import {
       ],
     },
     {
-      title: "Freelance Web Developer",
-      company_name: "Online",
+      title: "Web Developer",
+      company_name: "Freelance",
       icon: freelance,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
@@ -166,6 +167,23 @@ import {
         "Participating in code reviews, offering constructive feedback to enhance code quality, readability, and maintainability.",
         "Adapting to client requirements and delivering projects within specified timelines and budgets.",
         "Staying up-to-date with the latest web development trends and technologies to incorporate cutting-edge features and functionalities.",
+      ],
+    },
+    {
+      title: "Frontend Developer",
+      company_name: "Arizto Real Estate",
+      icon: arizto,
+      iconBg: "#383E56",
+      date: "Aug 2023 - Present",
+      points: [
+        "Developing and maintaining web applications for agents using React.js, ensuring robust and efficient solutions.",
+        "Maintaining a mobile app for agents with React Native, delivering a seamless and responsive experience on various devices.",
+        "Collaborating with cross-functional teams, including designers, product managers, and clients, to create high-quality and customized products.",
+        "Implementing responsive design techniques to ensure optimal user experiences for both web and mobile platforms.",
+        "Ensuring cross-browser compatibility and optimizing website and mobile app performance for optimal user satisfaction.",
+        "Participating in code reviews, offering constructive feedback to enhance code quality, readability, and maintainability.",
+        "Adapting to client requirements and delivering projects within specified timelines and budgets.",
+        "Staying up-to-date with the latest web and mobile development trends and technologies to incorporate cutting-edge features and functionalities.",
       ],
     },
   ];

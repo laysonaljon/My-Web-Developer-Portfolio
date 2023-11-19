@@ -10,16 +10,16 @@ const Hero = () => {
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-5 h-5 rounded-full bg-[#C7E8CA]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            I am <span className='text-[#915EFF]'>Aljon Layson</span>
+            I am <span className='text-[#52def2]'>Aljon Layson</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Web Developer<br className='sm:block hidden' />
+          <p className={`${styles.heroSubText} mt-2 text-[#176B87]`}>
+            Web Developer<br />
             Educator
           </p>
         </div>

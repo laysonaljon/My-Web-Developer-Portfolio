@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./web-logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -23,6 +23,7 @@ import dct from "./company/dct.png";
 import c9 from "./company/c9.png";
 import freelance from "./company/freelance.png";
 import cresi from "./company/cresi.png";
+import arizto from "./company/arizto.png";
 
 import imageai from "./imageai.png";
 import chatai from "./chatai.avif";
@@ -55,4 +56,5 @@ export {
   dct,
   freelance,
   cresi,
+  arizto
 };
