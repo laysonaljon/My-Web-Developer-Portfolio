@@ -5,13 +5,13 @@ import * as THREE from "three";
 
 import CanvasLoader from "../Loader";
 
-const Computers = () => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
-  const mixer = useRef(new THREE.AnimationMixer(computer.scene));
+const Hero = () => {
+  const hero = useGLTF("./hero/scene.gltf");
+  const mixer = useRef(new THREE.AnimationMixer(hero.scene));
   const animationAction = useRef();
 
   useEffect(() => {
-    const animations = computer.animations;
+    const animations = hero.animations;
 
     if (animations && animations.length > 0) {
       animationAction.current = mixer.current.clipAction(animations[0]);
@@ -22,7 +22,7 @@ const Computers = () => {
         mixer.current.stopAllAction();
       };
     }
-  }, [computer.animations]);
+  }, [hero.animations]);
 
   useFrame((_, delta) => {
     if (animationAction.current) {
@@ -30,10 +30,10 @@ const Computers = () => {
     }
   });
 
-  return <primitive object={computer.scene} scale={1.2} position-y={-1.7} rotation-y={0}/>;
+  return <primitive object={hero.scene} scale={1.2} position-y={-1.7} rotation-y={0}/>;
 };
 
-const ComputersCanvas = () => {
+const HeroCanvas = () => {
   return (
     <Canvas
       shadows
@@ -59,7 +59,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2.5}
           minPolarAngle={Math.PI / 2.5}
         />
-        <Computers />
+        <Hero />
 
         <Preload all />
       </Suspense>
@@ -67,4 +67,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default ComputersCanvas;
+export default HeroCanvas;
