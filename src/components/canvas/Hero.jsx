@@ -1,11 +1,11 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 
 import CanvasLoader from "../Loader";
 
-const Hero = () => {
+const Hero = ({ onPreloadComplete }) => {
   const hero = useGLTF("./hero/scene.gltf");
   const mixer = useRef(new THREE.AnimationMixer(hero.scene));
   const animationAction = useRef();
@@ -16,13 +16,11 @@ const Hero = () => {
     if (animations && animations.length > 0) {
       animationAction.current = mixer.current.clipAction(animations[0]);
       animationAction.current.play();
-
-      return () => {
-        // Cleanup
-        mixer.current.stopAllAction();
-      };
+      if (onPreloadComplete) {
+        onPreloadComplete();
+      }
     }
-  }, [hero.animations]);
+  }, [hero.animations, onPreloadComplete]);
 
   useFrame((_, delta) => {
     if (animationAction.current) {
@@ -30,10 +28,16 @@ const Hero = () => {
     }
   });
 
-  return <primitive object={hero.scene} scale={1.2} position-y={-1.7} rotation-y={0}/>;
+  return <primitive object={hero.scene} scale={1.2} position-y={-1.7} rotation-y={0} />;
 };
 
 const HeroCanvas = () => {
+  const [preloaded, setPreloaded] = useState(false);
+
+  const handlePreloadComplete = () => {
+    setPreloaded(true);
+  };
+
   return (
     <Canvas
       shadows
@@ -59,9 +63,11 @@ const HeroCanvas = () => {
           maxPolarAngle={Math.PI / 2.5}
           minPolarAngle={Math.PI / 2.5}
         />
-        <Hero />
 
-        <Preload all />
+        {/* Hero with callback for preload completion */}
+        <Hero onPreloadComplete={handlePreloadComplete} />
+
+        {preloaded && <Preload all />}
       </Suspense>
     </Canvas>
   );

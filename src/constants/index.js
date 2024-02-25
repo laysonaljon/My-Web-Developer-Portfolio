@@ -49,7 +49,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "ReactJS Developer",
       icon: backend,
     },
     {
