@@ -240,7 +240,7 @@ import {
         
       ],
       image: imageai,
-      source_code_link: "https://https://github.com/laysonaljon/AI-Image-Generator.com/",
+      source_code_link: "https://github.com/laysonaljon/AI-Image-Generator.com/",
       project_code_link: "https://ai-image-generator-kappa.vercel.app/",
     },
     {
@@ -266,7 +266,7 @@ import {
         },
       ],
       image: chatai,
-      source_code_link: "https://https://github.com/laysonaljon/Codex-Chat-AI.com/",
+      source_code_link: "https://github.com/laysonaljon/Codex-Chat-AI.com/",
       project_code_link: "https://codex-chat-ai-nine.vercel.app/",
     },
     {
