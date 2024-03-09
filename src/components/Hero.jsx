@@ -19,7 +19,7 @@ const Hero = () => {
             I am <span className='text-[#52def2]'>Aljon Layson</span>
           </h1>
           <p className={`${styles.heroSubText} text-white`}>
-            I'm a <TypeAnimation sequence={['Web Developer', 2000, 'Educator', 2000, 'Tech Enthusiast',2000]}
+            I'm <TypeAnimation sequence={['a Web Developer', 2000, 'an Educator', 2000, 'a Tech Enthusiast',2000]}
             speed={50} className="text-[#b200b0]" wrapper="span" repeat={Infinity} />
           </p>
         </div>
