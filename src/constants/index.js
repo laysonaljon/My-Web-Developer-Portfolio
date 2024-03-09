@@ -246,7 +246,7 @@ import {
     {
       name: "Codex Chat AI",
       description:
-        "This website is a simple AI Coding Chat bot for programming related prompts developed using VanillaJS and OpenAI's API text-davinci-003 model.",
+        "This website is a simple AI Coding Chat bot for programming related prompts developed using VanillaJS and OpenAI's API gpt-3.5-turbo-instruct model.",
       tags: [
         {
           name: "react",
